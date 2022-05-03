@@ -409,7 +409,7 @@
                         <form id="contactform" role="form" #contactForm="ngForm">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Name *" [(ngModel)]="name" [class.has-error]="cus_name.touched" #cus_name="ngModel"  autocomplete="new-password" required>
+                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Name *" [(ngModel)]="name" name="abraa" [class.has-error]="cus_name.touched" #cus_name="ngModel" autocomplete="new-password" required>
                                     <span class="error-msg" *ngIf="cus_name.errors?.required && cus_name.touched">Please enter your name !</span>
                                 </div>
                                 <div class="form-group col-md-6">

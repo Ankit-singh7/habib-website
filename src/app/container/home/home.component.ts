@@ -30,13 +30,7 @@ export class HomeComponent implements OnInit {
 
 
   getFoodList(){
-    this.commonService.getFoodList().subscribe((res) => {
-      if(res.data) {
-        this.lunchList = res.data.filter((item) => item.food_type === 'Lunch')
-        this.breakfastList = res.data.filter((item) => item.food_type === 'Breakfast')
-        this.dinnerList = res.data.filter((item) => item.food_type === 'Dinner')
-      }
-    })
+
   }
 
   sendMail(){
@@ -50,13 +44,13 @@ export class HomeComponent implements OnInit {
 
       console.log(obj)
 
-      this.commonService.sendEmail(obj).subscribe((res) => {
-        this.name = '';
-        this.email = '';
-        this.subject = '';
-        this.message = '';
-        this.toaster.success('Our Team will connect to you shortly!','Thank You');
-      })
+      // this.commonService.sendEmail(obj).subscribe((res) => {
+      //   this.name = '';
+      //   this.email = '';
+      //   this.subject = '';
+      //   this.message = '';
+      //   this.toaster.success('Our Team will connect to you shortly!','Thank You');
+      // })
     
 
   }

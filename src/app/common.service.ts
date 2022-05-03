@@ -16,11 +16,8 @@ export class CommonService {
   }
 
   sendEmail(data): Observable<any> {
-    return this.http.post(`${environment.apiURL}/users/send`,data);
+    return this.http.post(`${environment.apiURL}/user/send`,data);
   }
 
-  getFoodList(): Observable<any> {
-    return this.http.get(`${environment.apiURL}/p_food`);
-  }
-  
+
 }
