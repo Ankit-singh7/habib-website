@@ -21,8 +21,9 @@ export class FooterComponent implements OnInit {
 
   get_branch_detail(){
     this.commonService.getBranchList().subscribe((res) => {
-      this.branchDetails = res.data[0]
-      console.log(res)
+     res.data.shift()
+     this.branchDetails = res.data
+      console.log(this.branchDetails)
     })
   }
 

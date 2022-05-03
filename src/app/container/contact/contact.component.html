@@ -1,122 +1,130 @@
-<div class="container-xxl py-5 bg-dark hero-header mb-5">
-    <div class="container text-center my-5 pt-5 pb-4">
-        <h1 class="display-3 text-white mb-3 animated slideInDown">Contact Us</h1>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb justify-content-center text-uppercase">
-                <li class="breadcrumb-item"><a [routerLink]="['/home']">Home</a></li>
-                <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
-            </ol>
-        </nav>
-    </div>
-</div>
-
-<!-- Contact Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Contact Us</h5>
-                    <h1 class="mb-5">Contact For Any Query</h1>
-                </div>
-                <div class="row g-4">
-                    <div class="col-12">
-                        <div class="row gy-4">
-                            <div class="col-md-4">
-                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">Booking</h5>
-                                <p><i class="fa fa-envelope-open text-primary me-2"></i>query.lovedesichinese@gmail.com</p>
-                            </div>
-                            <div class="col-md-4">
-                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">General</h5>
-                                <p><i class="fa fa-envelope-open text-primary me-2"></i>lovedesichinese@gmail.com</p>
-                            </div>
-                            <!-- <div class="col-md-4">
-                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">Technical</h5>
-                                <p><i class="fa fa-envelope-open text-primary me-2"></i>tech@example.com</p>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
-                        <!-- <iframe class="position-relative rounded w-100 h-100"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-                            frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
-                            tabindex="0"></iframe> -->
-                        <iframe class="position-relative rounded w-100 h-100" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=140%20B.T.%20Road,%20Block-C,%20Ground%20Floor%20Dunlop%20Supermarket,%20beside%20Sonali%20Cinema%20Hall,%20Kolkata,%20West%20Bengal%20700108+(Love%20Desi%20Chinese)&amp;t=k&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/marine-gps/">ship tracker</a></iframe>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="wow fadeInUp" data-wow-delay="0.2s">
-                            <form id="contactform" role="form" #contactForm="ngForm">
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" [(ngModel)]="name" [class.has-error]="cus_name.touched" #cus_name="ngModel" name="name" placeholder="Your Name" required>
-                                            <label for="name">Your Name</label>
-                                            <span class="error-msg" *ngIf="cus_name.errors?.required && cus_name.touched">Please enter your name !</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control" [(ngModel)]="email" name="email" [class.has-error]="mail.invalid && mail.touched" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" #mail="ngModel" id="email" placeholder="Your Email" required>
-                                            <label for="email">Your Email</label>
-                                            <span class="error-msg" *ngIf="mail.errors?.required && mail.touched">Please enter your email !</span>
-                                            <span class="error-msg"  *ngIf="mail.errors?.pattern">Email is invalid!</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" [(ngModel)]="subject" name="subject" [class.has-error]="cus_subject.touched" #cus_subject="ngModel" id="subject" placeholder="Subject" required>
-                                            <label for="subject">Subject</label>
-                                            <span class="error-msg" *ngIf="cus_subject.errors?.required && cus_subject.touched">Please enter the Query title!</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <textarea class="form-control" [(ngModel)]="message" name="message" placeholder="Leave a message here"  [class.has-error]="cus_message.touched" #cus_message="ngModel" id="message" style="height: 150px" required></textarea>
-                                            <label for="message">Message</label>
-                                            <span class="error-msg" *ngIf="cus_message.errors?.required && cus_message.touched">Please enter the message!</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit" (click)="sendMail()" [disabled]="!contactForm.valid">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- <div class="col-md-6">
-                        <div class="wow fadeInUp" data-wow-delay="0.2s">
-                            <form>
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                            <label for="name">Your Name</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                            <label for="email">Your Email</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                            <label for="subject">Subject</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                                            <label for="message">Message</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div> -->
-                </div>
+  <!-- breadcrumb start-->
+  <section class="breadcrumb breadcrumb_bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="breadcrumb_iner text-center">
+            <div class="breadcrumb_iner_item">
+              <h2>Contact Us</h2>
+              <p>home <span class="ti-angle-double-right"></span>Contact us</p>
             </div>
+          </div>
         </div>
-        <!-- Contact End -->
+      </div>
+    </div>
+  </section>
+  <!-- breadcrumb start-->
+
+  <!-- ================ contact section start ================= -->
+  <section class="contact-section section_padding">
+    <div class="container">
+      <!-- <div class="d-none d-sm-block mb-5 pb-4">
+        <div id="map" style="height: 480px;"></div>
+        <script>
+          function initMap() {
+            var uluru = {
+              lat: -25.363,
+              lng: 131.044
+            };
+            var grayStyles = [{
+                featureType: "all",
+                stylers: [{
+                    saturation: -90
+                  },
+                  {
+                    lightness: 50
+                  }
+                ]
+              },
+              {
+                elementType: 'labels.text.fill',
+                stylers: [{
+                  color: '#ccdee9'
+                }]
+              }
+            ];
+            var map = new google.maps.Map(document.getElementById('map'), {
+              center: {
+                lat: -31.197,
+                lng: 150.744
+              },
+              zoom: 9,
+              styles: grayStyles,
+              scrollwheel: false
+            });
+          }
+        </script>
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap">
+        </script>
+
+      </div> -->
+
+
+      <div class="row">
+        <div class="col-12">
+          <h2 class="contact-title">Get in Touch</h2>
+        </div>
+        <div class="col-lg-8">
+          <form class="form-contact contact_form" id="contactform" role="form" #contactForm="ngForm">
+            <div class="row">
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" [(ngModel)]="name" [class.has-error]="cus_name.touched" #cus_name="ngModel" name="name" placeholder="Your Name" required>
+                  <span class="error-msg" *ngIf="cus_name.errors?.required && cus_name.touched">Please enter your name !</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="email" class="form-control" [(ngModel)]="email" name="email" [class.has-error]="mail.invalid && mail.touched" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" #mail="ngModel" id="email" placeholder="Your Email" required>
+                  <span class="error-msg" *ngIf="mail.errors?.required && mail.touched">Please enter your email !</span>
+                  <span class="error-msg"  *ngIf="mail.errors?.pattern">Email is invalid!</span>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input type="text" class="form-control" [(ngModel)]="subject" name="subject" [class.has-error]="cus_subject.touched" #cus_subject="ngModel" id="subject" placeholder="Subject" required>
+                  <span class="error-msg" *ngIf="cus_subject.errors?.required && cus_subject.touched">Please enter the Query title!</span>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+
+                  <textarea class="form-control" [(ngModel)]="message" name="message" placeholder="Leave a message here"  [class.has-error]="cus_message.touched" #cus_message="ngModel" id="message" style="height: 150px" required></textarea>
+                  <span class="error-msg" *ngIf="cus_message.errors?.required && cus_message.touched">Please enter the message!</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <button type="submit" class="button button-contactForm btn_4" type="submit" (click)="sendMail()" [disabled]="!contactForm.valid">Send Message</button>
+            </div>
+          </form>
+        </div>
+        <!-- <div class="col-lg-4">
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-home"></i></span>
+            <div class="media-body">
+              <h3>Buttonwood, California.</h3>
+              <p>Rosemead, CA 91770</p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+            <div class="media-body">
+              <h3>00 (440) 9865 562</h3>
+              <p>Mon to Fri 9am to 6pm</p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-email"></i></span>
+            <div class="media-body">
+              <h3>support@colorlib.com</h3>
+              <p>Send us your query anytime!</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- ================ contact section end ================= -->

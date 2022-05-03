@@ -1,343 +1,524 @@
-<div class="container-xxl py-5 bg-dark hero-header mb-5">
-    <div class="container my-5 py-5">
-        <div class="row align-items-center g-5">
-            <div class="col-lg-6 text-center text-lg-start">
-                <h1 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious Meal</h1>
-                <p class="text-white animated slideInLeft mb-4 pb-2">Great Results come out when people love what they do.
-                    Skilled chefs, trained Staff, Freshly Procured Ingredients and the love for food brings out the best dishes.</p>
-                <a [routerLink]="['/contact']" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Contact Us</a>
-            </div>
-            <div class="col-lg-6 text-center text-lg-end overflow-hidden">
-                <img class="img-fluid" src="../../../../assets/img/hero.png" alt="">
+
+    <!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                            <h5>Feel like home</h5>
+                            <h1>Good Look Guaranteed</h1>
+                            <p>Divide give Dominion wont deep he them seed thing open sixth beast don't yea very
+                                it meat yielding for air in without one upon it without, his creepeth tree
+                                gathering behold and, greater have given deep his</p>
+                            <div class="banner_btn">
+                                <!-- <a (click)="scroll(reservation)" class="btn_1">Book Now</a> -->
+                                <a  class="btn_1" (click)="scroll(reservation)">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
+    <!-- banner part start-->
+
+    <!-- about part start-->
+    <section class="about_part">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-4 col-lg-6">
+                    <div class="about_img ">
+                        <img src="../../../assets/img/about_us_1.png" class="about_img_1" alt="">
+                        <img src="../../../assets/img/about_us_2.webp" class="about_img_2" alt="">
+                        <img src="../../../assets/img/about_us_3.jpg" class="about_img_3" alt="">
+                    </div>
+                </div>
+                <div class="col-md-7 offset-md-1 col-lg-3 offset-lg-1">
+                    <div class="about_text">
+                        <h5>About us</h5>
+                        <h2>Connect with your dream style</h2>
+                        <p>Seed spirit replenish cattle one moved air created. Them fill dont be fed isnt to he
+                            shall god good spirit they are the. Hath Itself their second ifruitful a moving
+                            their creature living every i replenish land and had hen lesser for their good
+                            quality products</p>
+                        <p>Seed spirit replenish cattle one moved air created. Them fill dont be fed isnt to he shall
+                            god good spirit they are the. Hath Itself their second ifruitful a moving their creature
+                            living every</p>
+                        <!-- <a href="#" class="btn_3">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about part end-->
+
+    <!-- Service part start-->
+    <section class="service_part section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-lg-6 col-sm-10">
+                    <div class="section_tittle">
+                        <img src="../../../assets/img/section_tittle_icon.png" alt="icon">
+                        <h2>Service Expectation</h2>
+                        <p>Good morning forth gathering doesn't god gathering man and had moveth there dry sixth
+                            dominion
+                            rule divided behold after had he did not move .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_service_part">
+                        <img src="../../../assets/img/service/single_service_1.png" style="height:340px" alt="">
+                        <div class="single_service_text">
+                            <h4>Stylish Hair Cut</h4>
+                            <p>Good morning forth gathering does god gathering man and had moveth there
+                                dry so dominion rule divided had</p>
+                            <!-- <a href="#" class="btn_3">Read More</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_service_part">
+                        <img src="../../../assets/img/service/single_service_2.jpg" style="height:340px" alt="">
+                        <div class="single_service_text">
+                            <h4>Wedding Hair</h4>
+                            <p>Good morning forth gathering does god gathering man and had moveth there
+                                dry so dominion rule divided had</p>
+                            <!-- <a href="#" class="btn_3">Read More</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_service_part">
+                        <img src="../../../assets/img/service/single_service_3.jpg" style="height:340px" alt="">
+                        <div class="single_service_text">
+                            <h4>Color & Hair Wash</h4>
+                            <p>Good morning forth gathering does god gathering man and had moveth there
+                                dry so dominion rule divided had</p>
+                            <!-- <a href="#" class="btn_3">Read More</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service part end-->
+
+    <!-- our_offer part start-->
+    <section class="our_offer">
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-lg-12">
+                    <div class="single_offer_part">
+                        <div class="single_offer">
+                            <img src="../../../assets/img/offer_img_1.png" alt="offer_img_1">
+                            <div class="hover_text">
+                                <img src="../../../assets/img/icon/cutter.svg" alt="#">
+                                <h2>Best Equipment</h2>
+                                <p>Winged day grass creepeth us second signs</p>
+                                <a href="#" class="offer_btn"><span class="flaticon-slim-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_offer_part">
+                        <div class="single_offer">
+                            <img src="../../../assets/img/icon/offer_img_34.png" style="height:405px;" alt="offer_img_1">
+                            <div class="hover_text">
+                                <img src="../../../assets/img/icon/cutter.svg" alt="#">
+                                <h2>Best Price</h2>
+                                <p>Winged day grass creepeth us second signs </p>
+                                <a href="#" class="offer_btn"><span class="flaticon-slim-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_offer_part">
+                        <div class="single_offer">
+                            <img src="../../../assets/img/offer_img_3.png" alt="offer_img_1">
+                            <div class="hover_text">
+                                <img src="../../../assets/img/icon/cutter.svg" alt="#">
+                                <h2>Best Product</h2>
+                                <p>Winged day grass creepeth us second signs</p>
+                                <a href="#" class="offer_btn"><span class="flaticon-slim-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_offer_part">
+                        <div class="single_offer">
+                            <img src="../../../assets/img/offer_img_34.jpg" style="height:405px;" alt="offer_img_1">
+                            <div class="hover_text">
+                                <img src="../../../assets/img/icon/cutter.svg" alt="#">
+                                <h2>Best Bridal Makeup</h2>
+                                <p>Winged day grass creepeth us second signs</p>
+                                <a href="#" class="offer_btn"><span class="flaticon-slim-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our_offer part end-->
+
+
+    <!-- Service part start-->
+    <!-- <section class="priceing_part">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-lg-6 col-sm-10">
+                    <div class="section_tittle">
+                        <img src="../../../assets/img/section_tittle_icon.png" alt="icon">
+                        <h2>Pricing Plan</h2>
+                        <p>Good morning forth gathering doesn't god gathering man and had moveth there dry sixth
+                            dominion rule divided behold after had he did not move .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-6">
+                    <div class="single_pricing_item">
+                        <img src="../../../assets/img/pricing_img/pricing_img_1.png" alt="">
+                        <div class="single_pricing_text">
+                            <h5>Hair Cut</h5>
+                            <h6>$10.00</h6>
+                            <p>Their days lesser and every firmament</p>
+                        </div>
+                    </div>
+                    <div class="single_pricing_item">
+                        <img src="../../../assets/img/pricing_img/pricing_img_2.png" alt="">
+                        <div class="single_pricing_text">
+                            <h5>Hair Color</h5>
+                            <h6>$10.00</h6>
+                            <p>Their days lesser and every firmament</p>
+                        </div>
+                    </div>
+                    <div class="single_pricing_item">
+                        <img src="../../../assets/img/pricing_img/pricing_img_3.png" alt="">
+                        <div class="single_pricing_text">
+                            <h5>Hair Straight</h5>
+                            <h6>$10.00</h6>
+                            <p>Their days lesser and every firmament</p>
+                        </div>
+                    </div>
+                    <div class="single_pricing_item">
+                        <img src="../../../assets/img/pricing_img/pricing_img_4.png" alt="">
+                        <div class="single_pricing_text">
+                            <h5>Shampoo</h5>
+                            <h6>$10.00</h6>
+                            <p>Their days lesser and every firmament</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="single_pricing_item">
+                        <img src="../../../assets/img/pricing_img/pricing_img_5.png" alt="">
+                        <div class="single_pricing_text">
+                            <h5>Hair Wash</h5>
+                            <h6>$10.00</h6>
+                            <p>Their days lesser and every firmament</p>
+                        </div>
+                    </div>
+                    <div class="single_pricing_item">
+                        <img src="../../../assets/img/pricing_img/pricing_img_6.png" alt="">
+                        <div class="single_pricing_text">
+                            <h5>Hair Shave</h5>
+                            <h6>$10.00</h6>
+                            <p>Their days lesser and every firmament</p>
+                        </div>
+                    </div>
+                    <div class="single_pricing_item">
+                        <img src="../../../assets/img/pricing_img/pricing_img_7.png" alt="">
+                        <div class="single_pricing_text">
+                            <h5>Men’s Facial</h5>
+                            <h6>$10.00</h6>
+                            <p>Their days lesser and every firmament</p>
+                        </div>
+                    </div>
+                    <div class="single_pricing_item">
+                        <img src="../../../assets/img/pricing_img/pricing_img_8.png" alt="">
+                        <div class="single_pricing_text">
+                            <h5>Wedding Style</h5>
+                            <h6>$10.00</h6>
+                            <p>Their days lesser and every firmament</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Service part end-->
+
+
+    <!--::review_part start::-->
+    <section class="review_part gray_bg section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!--Carousel Wrapper-->
+  <div id="carousel-example-2" class="carousel slide" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-2" data-slide-to="1"></li>
+      <li data-target="#carousel-example-2" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="client_review_single">
+            <!-- <img src="../../../assets/img/Quote.png" class="Quote" alt="quote"> -->
+            <div class="client_review_text media-body">
+                <p>Very good service</p>
+            </div>
+            <!-- <div class="client_img">
+                <img src="../../../assets/img/client/client_1.png" alt="">
+            </div> -->
+            <h4>- Dipika K</h4>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="client_review_single">
+            <!-- <img src="../../../assets/img/Quote.png" class="Quote" alt="quote"> -->
+            <div class="client_review_text">
+                <p>Am gonna visit again. I loved the results.</p>
+            </div>
+            <!-- <div class="client_img">
+                <img src="../../../assets/img/client/client_1.png" alt="">
+            </div> -->
+            <h4>- Dona M </h4>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="client_review_single">
+            <!-- <img src="../../../assets/img/Quote.png" class="Quote" alt="quote"> -->
+            <div class="client_review_text">
+                <p>Happy with my haircut and haircolor</p>
+            </div>
+            <!-- <div class="client_img">
+                <img src="../../../assets/img/client/client_1.png" alt="">
+            </div> -->
+            <h4>- anwesha g</h4>
+        </div>
+      </div>
     </div>
-</div>
-
-        <!-- Service Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
-                                <h5>Master Chefs</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
-                                <h5>Quality Food</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
-                                <h5>Online Order</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-headset text-primary mb-4"></i>
-                                <h5>24/7 Service</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                            </div>
-                        </div>
-                    </div> -->
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+  <!-- /.Carousel Wrapper-->
                 </div>
             </div>
         </div>
-        <!-- Service End -->
+    </section>
+    <!--::review_part end::-->
 
-
-        <!-- About Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="row g-3">
-                            <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="../../../../assets/img/dish_1.jpg">
-                            </div>
-                            <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="../../../../assets/img/dish_2.jpeg" style="margin-top: 25%;">
-                            </div>
-                            <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="../../../../assets/img/about-3.jpg">
-                            </div>
-                            <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="../../../../assets/img/about-4.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
-                        <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Desi Chinese</h1>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <div class="row g-4 mb-4">
-                            <div class="col-sm-6">
-                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">3+</h1>
-                                    <div class="ps-4">
-                                        <p class="mb-0">Years of</p>
-                                        <h6 class="text-uppercase mb-0">Experience</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">10+</h1>
-                                    <div class="ps-4">
-                                        <p class="mb-0">Professional</p>
-                                        <h6 class="text-uppercase mb-0">Master Chefs</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <a class="btn btn-primary py-3 px-5 mt-2" [routerLink]="['/about']">Read More</a> -->
+    <!-- ::chefs_part start::-->
+    <!-- <section class="artist_part">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-lg-6 col-sm-10">
+                    <div class="section_tittle">
+                        <img src="../../../assets/img/section_tittle_icon.png" alt="icon">
+                        <h2>Meet Our Artist</h2>
+                        <p>Good morning forth gathering doesn't god gathering man and had moveth there dry sixth
+                            dominion rule divided behold after had he did not move .</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- About End -->
-
-
-        <!-- Menu Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
-                    <h1 class="mb-5">Most Popular Items</h1>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="../../../assets/img/artist/artist_1.png" alt="artist">
+                        </div>
+                        <div class="single_text">
+                            <div class="single_blog_text text-center">
+                                <h3>Adam Billiard</h3>
+                                <p>Chef Master</p>
+                                <div class="social_icon">
+                                    <a href="#"> <i class="ti-facebook"></i> </a>
+                                    <a href="#"> <i class="ti-twitter-alt"></i> </a>
+                                    <a href="#"> <i class="ti-instagram"></i> </a>
+                                    <a href="#"> <i class="ti-skype"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
-                        <li class="nav-item">
-                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
-                                <i class="fa fa-coffee fa-2x text-primary"></i>
-                                <div class="ps-3 hide-text">
-                                    <small class="text-body">Delicious</small>
-                                    <h6 class="mt-n1 mb-0">Cravings</h6>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                                <img src="../../../assets/img/artist/artist_2.png" alt="artist">
+                        </div>
+                        <div class="single_text">
+                            <div class="single_blog_text text-center">
+                                <h3>Fred Macyard</h3>
+                                <p>Chef Master</p>
+                                <div class="social_icon">
+                                    <a href="#"> <i class="ti-facebook"></i> </a>
+                                    <a href="#"> <i class="ti-twitter-alt"></i> </a>
+                                    <a href="#"> <i class="ti-instagram"></i> </a>
+                                    <a href="#"> <i class="ti-skype"></i> </a>
                                 </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
-                                <i class="fa fa-hamburger fa-2x text-primary"></i>
-                                <div class="ps-3 hide-text">
-                                    <small class="text-body">Special</small>
-                                    <h6 class="mt-n1 mb-0">Lunch</h6>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
-                                <i class="fa fa-utensils fa-2x text-primary"></i>
-                                <div class="ps-3 hide-text">
-                                    <small class="text-body">Lovely</small>
-                                    <h6 class="mt-n1 mb-0">Dinner</h6>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row g-4">
-                                <ng-container *ngIf="breakfastList.length>0">
-                                    <ng-container *ngFor="let item of breakfastList">
-                                        <div class="col-lg-6">
-                                            <div class="d-flex align-items-center">
-                                                <!-- <img class="flex-shrink-0 img-fluid rounded" src="../../../../assets/img/menu-1.jpg" alt="" style="width: 80px;"> -->
-                                                <div class="w-100 d-flex flex-column text-start ps-4">
-                                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>{{item.food_name}}</span>
-                                                        <span class="text-primary">&#8377; {{item.price}}</span>
-                                                    </h5>
-                                                    <!-- <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </ng-container>
-                                </ng-container>
                             </div>
                         </div>
-                        <div id="tab-2" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <ng-container *ngIf="lunchList.length>0">
-                                    <ng-container *ngFor="let item of lunchList">
-                                        <div class="col-lg-6">
-                                            <div class="d-flex align-items-center">
-                                                <!-- <img class="flex-shrink-0 img-fluid rounded" src="../../../../assets/img/menu-1.jpg" alt="" style="width: 80px;"> -->
-                                                <div class="w-100 d-flex flex-column text-start ps-4">
-                                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>{{item.food_name}}</span>
-                                                        <span class="text-primary">&#8377; {{item.price}}</span>
-                                                    </h5>
-                                                    <!-- <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </ng-container>
-                                </ng-container>
-
-                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                                <img src="../../../assets/img/artist/artist_3.png" alt="artist">
                         </div>
-                        <div id="tab-3" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <ng-container *ngIf="dinnerList.length>0">
-                                    <ng-container *ngFor="let item of dinnerList">
-                                        <div class="col-lg-6">
-                                            <div class="d-flex align-items-center">
-                                                <!-- <img class="flex-shrink-0 img-fluid rounded" src="../../../../assets/img/menu-1.jpg" alt="" style="width: 80px;"> -->
-                                                <div class="w-100 d-flex flex-column text-start ps-4">
-                                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                        <span>{{item.food_name}}</span>
-                                                        <span class="text-primary">&#8377; {{item.price}}</span>
-                                                    </h5>
-                                                    <!-- <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </ng-container>
-                                </ng-container>
+                        <div class="single_text">
+                            <div class="single_blog_text text-center">
+                                <h3>Justin Stuard</h3>
+                                <p>Chef Master</p>
+                                <div class="social_icon">
+                                    <a href="#"> <i class="ti-facebook"></i> </a>
+                                    <a href="#"> <i class="ti-twitter-alt"></i> </a>
+                                    <a href="#"> <i class="ti-instagram"></i> </a>
+                                    <a href="#"> <i class="ti-skype"></i> </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Menu End -->
+    </section> -->
+    <!--::chefs_part end:: -->
 
-
-        <!-- Reservation Start -->
-        <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="row g-0">
-                <div class="col-md-6">
-                    <div class="video">
-                        <iframe class="position-relative rounded w-100 h-100" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=140%20B.T.%20Road,%20Block-C,%20Ground%20Floor%20Dunlop%20Supermarket,%20beside%20Sonali%20Cinema%20Hall,%20Kolkata,%20West%20Bengal%20700108+(Love%20Desi%20Chinese)&amp;t=k&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/marine-gps/">ship tracker</a></iframe>
-                    </div>
-                </div>
-                <!-- book a table -->
-                <!-- <div class="col-md-6 bg-dark d-flex align-items-center">
-                    <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
-                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
-                        <h1 class="text-white mb-4">Book A Table Online</h1>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating date" id="date3" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
-                                        <label for="datetime">Date & Time</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <select class="form-select" id="select1">
-                                          <option value="1">People 1</option>
-                                          <option value="2">People 2</option>
-                                          <option value="3">People 3</option>
-                                        </select>
-                                        <label for="select1">No Of People</label>
-                                      </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
-                                        <label for="message">Special Request</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Book Now</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div> -->
-                <!-- end -->
-                <!-- contact -->
-                <div class="col-md-6 bg-dark d-flex align-items-center">
-                    <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
-                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Get in touch for booking</h5>
-                        <h1 class="text-white mb-4">Contact Us</h1>
+    <!--::regervation_part start::-->
+    <section class="regervation_part section_padding" #reservation>
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-7">
+                    <div class="regervation_part_iner">
                         <form id="contactform" role="form" #contactForm="ngForm">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" [(ngModel)]="name" [class.has-error]="cus_name.touched" #cus_name="ngModel" name="name" placeholder="Your Name" required>
-                                        <label for="name">Your Name</label>
-                                        <span class="error-msg" *ngIf="cus_name.errors?.required && cus_name.touched">Please enter your name !</span>
-                                    </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Name *" [(ngModel)]="name" [class.has-error]="cus_name.touched" #cus_name="ngModel"  autocomplete="new-password" required>
+                                    <span class="error-msg" *ngIf="cus_name.errors?.required && cus_name.touched">Please enter your name !</span>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" [(ngModel)]="email" name="email" [class.has-error]="mail.invalid && mail.touched" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" #mail="ngModel" id="email" placeholder="Your Email" required>
-                                        <label for="email">Your Email</label>
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" id="inputPassword4"
+                                        placeholder="Email address *" [(ngModel)]="email" name="email" [class.has-error]="mail.invalid && mail.touched" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" #mail="ngModel" autocomplete="new-password" required>
                                         <span class="error-msg" *ngIf="mail.errors?.required && mail.touched">Please enter your email !</span>
-                                        <span class="error-msg"  *ngIf="mail.errors?.pattern">Email is invalid!</span>
+                                        <span class="error-msg"  *ngIf="mail.errors?.pattern">Email is invalid!</span>               
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Subject *" [(ngModel)]="subject" name="subject" [class.has-error]="cus_subject.touched" #cus_subject="ngModel" autocomplete="new-password" required>
+                                    <span class="error-msg" *ngIf="cus_subject.errors?.required && cus_subject.touched">Please enter the Query title!</span>
+                                </div>
+                                <!-- <div class="form-group col-md-6">
+                                    <select class="form-control" id="Select">
+                                        <option value="1" selected>Select service*</option>
+                                        <option value="2">Name of service</option>
+                                        <option value="3">Name of service</option>
+                                        <option value="4">Name of service</option>
+                                        <option value="5">Name of service</option>
+                                    </select>
+                                </div> -->
+                                <!-- <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" id="pnone" placeholder="Phone number *">
+                                </div> -->
+                                <!-- <div class="form-group col-md-6">
+                                    <div class="input-group date">
+                                        <input id="datepicker" type="text" class="form-control" placeholder="Date *" />
                                     </div>
+                                </div> -->
+                                <!-- <div class="form-group time_icon col-md-6">
+                                    <select class="form-control" id="Select2">
+                                        <option value="" selected>Time *</option>
+                                        <option value="1">8 AM TO 10AM</option>
+                                        <option value="1">10 AM TO 12PM</option>
+                                        <option value="1">12PM TO 2PM</option>
+                                        <option value="1">2PM TO 4PM</option>
+                                        <option value="1">4PM TO 6PM</option>
+                                        <option value="1">6PM TO 8PM</option>
+                                        <option value="1">4PM TO 10PM</option>
+                                        <option value="1">10PM TO 12PM</option>
+                                    </select>
+                                </div> -->
+                                <div class="form-group col-md-12">
+                                    <textarea class="form-control" id="Textarea" rows="4"
+                                    [(ngModel)]="message" name="message" placeholder="Leave a message here"  [class.has-error]="cus_message.touched" #cus_message="ngModel" id="message" style="height: 150px" required></textarea>
                                 </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" [(ngModel)]="subject" name="subject" [class.has-error]="cus_subject.touched" #cus_subject="ngModel" id="subject" placeholder="Subject" required>
-                                        <label for="subject">Subject</label>
-                                        <span class="error-msg" *ngIf="cus_subject.errors?.required && cus_subject.touched">Please enter the Query title!</span>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" [(ngModel)]="message" name="message" placeholder="Leave a message here"  [class.has-error]="cus_message.touched" #cus_message="ngModel" id="message" style="height: 150px" required></textarea>
-                                        <label for="message">Message</label>
-                                        <span class="error-msg" *ngIf="cus_message.errors?.required && cus_message.touched">Please enter the message!</span>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit" (click)="sendMail()" [disabled]="!contactForm.valid">Send Message</button>
-                                </div>
+                            </div>
+
+
+                            <div class="regerv_btn">
+                                <button class="button button-contactForm btn_4" type="submit" (click)="sendMail()" [disabled]="!contactForm.valid">Get in touch</button>
                             </div>
                         </form>
                     </div>
                 </div>
-                <!-- end -->
             </div>
         </div>
+    </section>
+    <!--::regervation_part end::-->
 
-        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- blog part start-->
+    <!-- <section class="blog_part service_part section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_tittle">
+                        <img src="../../../assets/img/section_tittle_icon.png" alt="icon">
+                        <h2>Latest Style News</h2>
+                        <p>Good morning forth gathering doesn't god gathering man and had moveth there
+                            dry sixth dominion rule divided behold after had he did not move .</p>
                     </div>
-                    <div class="modal-body">
-                        <!-- 16:9 aspect ratio -->
-                        <div class="ratio ratio-16x9">
-                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                                allow="autoplay"></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_service_part">
+                        <img src="../../../assets/img/service/single_service_1.png" alt="">
+                        <div class="single_service_text">
+                            <p> <a href="blog.html">art, illustration</a> <span>|</span> March 30, 2019</p>
+                            <h4> <a href="#">There our you divide itseld..</a></h4>
+                            <p>Man moveth days wherein you're that made years he after us light let moved.</p>
+                            <a href="#" class="btn_3">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_service_part">
+                        <img src="../../../assets/img/service/single_service_2.png" alt="">
+                        <div class="single_service_text">
+                            <p> <a href="blog.html">art, illustration</a> <span>|</span> March 30, 2019</p>
+                            <h4> <a href="#">One which won two divide..</a></h4>
+                            <p>Man moveth days wherein you're that made years he after us light let moved.</p>
+                            <a href="#" class="btn_3">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_service_part">
+                        <img src="../../../assets/img/service/single_service_3.png" alt="">
+                        <div class="single_service_text">
+                            <p> <a href="blog.html">art, illustration</a> <span>|</span> March 30, 2019</p>
+                            <h4> <a href="#">There our you divide itseld..</a></h4>
+                            <p>Man moveth days wherein you're that made years he after us light let moved.</p>
+                            <a href="#" class="btn_3">Read More</a>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
-        <!-- Reservation Start -->
+    </section> -->
+    <!-- blog_part part end-->
