@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiURL: 'https://api.lovedesichinese.com/api/v1'
+  apiURL: "https://api.ahsalons.in/api/v1"
 };
